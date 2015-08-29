@@ -1,0 +1,18 @@
+-------------------------------------------------------
+GRADE CARD	
+-------------------------------------------------------
+USN:1pi12is128
+-------------------------------------------------------
+Subject Name		Subject ID		Grade
+
+algorithms		12IS201			
+database manag		12IS202			
+linear algebra		12IS203			
+finite automata		12IS204			
+micro processor		12IS205			
+ada laboratory		12IS206			
+dbms laboratory		12IS207			
+mp laboratory		12IS208			
+-------------------------------------------------------
+SGPA=
+-------------------------------------------------------

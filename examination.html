@@ -1,0 +1,240 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+</div>
+<div style="text-align:right">    
+  <b><font color="blue">Team members:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</font></b><br>
+  <b><font color="#B31B1B">Vaibhav Singh : 1PI12IS122.&nbsp&nbsp&nbsp</font></b><br>
+  <b><font color="#B31B1B">Vishwanath H  : 1PI12IS128.&nbsp&nbsp&nbsp</font></b><br>
+  <!-- more links here -->
+</div>
+<style>
+
+#background {
+	background:#ccc;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#A4A4A4');
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#A4A4A4));
+    background: -moz-linear-gradient(top,  #FFFFFF,  #A4A4A4);
+	height: 100%;
+    margin-left: -1%;
+    position: absolute;
+    width: 101%;
+    z-index: -1;
+}
+
+.menu {
+	float:left;
+	background:black;
+	box-shadow: 0 0 20px #333333;
+	width:22%;
+	margin-left:19%;
+	height:60%;
+	position:relative;
+	overflow:hidden;
+	border-radius:5%;
+	display:none;
+}
+
+#content {
+	height: 60%;
+    position: relative;
+	padding-top: 13%;
+	 margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#header {
+	/*background: none repeat scroll 0 0 black;
+	box-shadow: 1px 1px 20px #333333;*/
+	margin-left: -1%;
+    margin-top: -0.6%;
+    font`-family: verdana;
+    font-size: 160%;
+    font-weight: bold;
+    height: 6%;
+    padding: 1%;
+	text-align:center;
+	/*color:#efefef;*/
+}
+
+#header img {
+	text-align : center;
+}
+
+body {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-over {
+	background :#ccc;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd', endColorstr='#eee');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#eee));
+    background: -moz-linear-gradient(top,  #ddd,  #eee);
+	padding:15px;
+	height: 90%;
+    position:absolute;
+    top: -80%;
+    width: 100%;
+}
+
+.menu-inner {
+	color: #eee;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+	text-shadow: 1px 1px 30px white;
+}
+
+.login {
+	background: none repeat scroll 0 0 #04B431;
+    border: medium none;
+    margin-top: 5%;
+    padding: 5px 20px;
+    position: relative;
+	color:white;
+	cursor:pointer;
+	z-index:100;
+}
+
+.login:hover {
+	box-shadow:1px 1px 5px gray;
+}
+
+#footer {
+	background: none repeat scroll 0 0 black;
+    bottom: 0;
+    box-shadow: 1px -5px 20px #333333;
+    height: 10%;
+    margin-left: -1%;
+    position: absolute;
+    width: 101%;
+}
+
+#pesit-zone {
+	color:#04B431;
+	text-shadow : 1px 1px 1px #333333;
+}
+
+#error {
+	color : red;
+	font-weight:bold;
+	text-align:center;
+	display:none;
+}
+
+.menu-innerct {
+	margin-top: 20%;
+}
+
+.menu-over span {
+	top:25%;
+	position:absolute;
+	color: #444444;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+</style>
+
+<script type="text/javascript" >
+
+    function Redirect(e, url) {
+        e.preventDefault();
+        window.location.href = url;
+    };
+	
+	function slideDown() {
+		var doc = this.children[1];
+		doc.style.top = '0%';
+		doc.style.transition = 'top 0.5s';
+		doc.style.mozTransition = 'top 0.5s, -moz-transform 0.5s';
+		doc.style.webkitTransition = 'top 0.5s, -webkit-transform 0.5s';
+		doc.style.oTransition = 'top 0.5s, -o-transform 0.5s';
+	};
+	
+	function slideUp() {
+		var doc = this.children[1];
+		doc.style.top = '-80%';
+		doc.style.transition = 'top 0.5s';
+		doc.style.mozTransition = 'top 0.5s, -moz-transform 0.5s';
+		doc.style.webkitTransition = 'top 0.5s, -webkit-transform 0.5s';
+		doc.style.oTransition = 'top 0.5s, -o-transform 0.5s';
+	};
+
+	window.onload = function()	{
+		if(window.navigator.userAgent.indexOf('MSIE') >= 0 || window.navigator.userAgent.indexOf('Internet Explorer') >= 0) {
+			document.getElementById("error").style.display = "block";
+			return;
+		}
+		var nodes = document.getElementsByClassName('menu');
+		for(var i = 0 ; i < nodes.length ; i++) {
+			nodes[i].style.display = "block";
+		}
+		document.getElementById("admission").onmouseover = slideDown;
+		document.getElementById("student").onmouseover = slideDown;
+		
+		document.getElementById("admission").onmouseout = slideUp;
+		document.getElementById("student").onmouseout = slideUp;
+
+	};	
+
+</script>
+
+<title>Exam Zone</title>
+</head>
+<body>
+<div id="background"></div>
+<div id="header">
+	<img border="0" src="exam.png" alt="Pulpit rock" width="100" height="100">
+	<div id="hdr">EXAMINATION MANAGEMENT SYSTEM</div><hr>
+	<div id="pesit-zone">EXAM ZONE</div>
+	<!-- <div style="color:red;font-size:15px;padding:30px 0px 0px 0px;"><marquee behavior="scroll" direction="left" scrollamount="5">Online Registration has been extended upto 28th January 2014 6:00 PM</marquee></div> -->
+</div>
+</div>
+<div id="content">
+	<div id="error">Your browser is not compatible. Use Firefox or Google Chrome instead. </div>
+	<div id="admission" class="menu">
+		<div class="menu-inner">
+			<button type="button" class="login" onclick="Redirect(event,'admin_lg.php')">Login</button><br>
+			<div class="menu-innerct">Admin</div>
+		</div>
+	<div class="menu-over">
+			<span>
+				<ul>
+					<li><b><font size="5" color="black">Admin Login</font></b></li>
+					
+				</ul>
+			</span>
+		</div>	
+		
+				
+	</div>
+	<div id="student" class="menu">
+		<div class="menu-inner">
+			<button type="button" class="login" onclick="Redirect(event, 'st_login.php')">Login</button> <br>   
+			<div class="menu-innerct">Student</div>
+			<div style="font-size:12px;padding:30px 0px 0px 0px;text-shadow:none;color:#2EFE2E"></div> 
+		</div>
+		<div class="menu-over">
+			<span>
+				<ul>
+					<li>View Results</li>
+					<li>Registration For Exam</li> 
+					<li>View Time Table </li> 
+					
+				</ul>
+			</span>
+		</div>		
+	</div>
+	
+	
+
+
+</body>
+</html>
+
